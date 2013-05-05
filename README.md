@@ -13,8 +13,11 @@ Init a variable for VS_PullToRefresh:
 First line init's the class. The 2nd line tells the class which UICollectionView/UICollectionViewController to display on. Then the 3rd line tells the class what function to call when pulled down.
 
 refreshControl = [[VS_PullToRefresh alloc] initWithDelegate:(id<VS_PullToRefreshDelegate>)self];
+
 [refreshControl showInView:[self collectionView]];
+
 [refreshControl setSelector:@"pull_results"];
+
 
 And include the following functions:
 
